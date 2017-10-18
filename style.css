@@ -3,8 +3,11 @@ body {
     text-align: right;
     margin: 0;
     padding: 0;
+    width: 1187,2px;
+    height: 1000px;
   }
-
+  
+ 
   header {
     list-style: none;
     background: linear-gradient(rgb(144,144,144) 82%, rgb(170,170,170));
@@ -13,22 +16,26 @@ body {
     height: 105px;
 }
 
-.main-element {
-  width: 900px;
-  border: 1px solid black;
-  margin: auto;
-  height: 1200px; 
-  
+.horisontal-menu {
+  position: relative;
+  top: 60px;
+  margin-top: 20px;
 }
+
   .horisontal-menu > ul {
     list-style: none;
-
-    background-color: rgb(155, 155, 155);
+    background-color: none;
 }
 
   .horisontal-menu > ul > li {
     display: inline;
+    padding: 10px;
     /*float: left;*/
+  }
+  .logotype  {
+    right: 500px;
+    top: -20px;
+    position: absolute;
   }
 
 .horisontal-menu > ul > li > a {
@@ -68,26 +75,101 @@ body {
     font-size: 12px;
     padding-top: 5px;
   }
+  .main-element {
+    width: 900px;
+    border: 1px solid black;
+    margin: auto;
+    height: 100%;
+
+  }
+  
+  .column {
+    float: right;
+    width: 33.3%;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+.row1:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+
+
+
+  /*.first-row {
+    position: absolute;
+  }
 
   .big-pictures {
+
     float: right;
-    padding: 2px;
+    /*padding: 2px;
+    top: 20px;
   }
-
-
-
 
   .small-pictures {
+    border:1px solid blue;
+    width: 33.3%;
+    top: 400px;
     float: right;
-    width: 20%;
 
   }
+
+
+
+  #small-left {
+    position: relative;
+  
+  }
+  small-pictures > small-top-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+ */ 
+
+  .horisontal-menu-button > ul {
+    list-style: none;
+    background-color: none;
+    text-align: center;
+}
+
+  .horisontal-menu-button > ul > li {
+    display: inline;
+    /*float: left;*/
+  }
+  
+
+.horisontal-menu-button > ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  
+
+}
+
+.horisontal-menu-button > ul > li > a:hover {
+  background-color: rgb(105, 105, 105);
+  margin-top: -30px;
+}
+
 
   footer {
  background-color: rgb(155, 155, 155);
 width: 100%;
 height: 55px;
 position: fixed;
-bottom: 0; 
+bottom: 15px; 
     
   }
