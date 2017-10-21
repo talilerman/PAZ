@@ -3,8 +3,6 @@ body {
     text-align: right;
     margin: 0;
     padding: 0;
-    width: 1187,2px;
-    height: 1000px;
   }
   
   header {
@@ -137,11 +135,15 @@ line-height: 12px;
   color: white; 
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  width: 50px;
-  text-align: left;
-  right: 160px;  
-  
+  width: 60px;
+  right: 150px;
+  display: inline;  
  }
+
+.text-link:hover{
+  color: blue;
+}
+
 .row1-pictures {
    border-radius: 0 0 20px 0;
  }
@@ -203,32 +205,34 @@ display: inline;
 .nordth-west {
     position: absolute;
     top: 60px; 
-    right: 30px;
+    right: -10px;
   }
-  .nordth-west > ul > li {
-    text-decoration: none;
+  .nordth-west > ul {
+    list-style: none;
+  }
+  .nordth-west > ul > li > a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: grey;
     
   }
 
- .column-detail {
+ .column-detail{
   position: absolute;
   left: 30px;
+  bottom: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: grey;
-
  } 
 
 
-.column-detail {
-  position: absolute;
-  bottom: 20px;
+ .nordth-west > ul > li > a:hover {
+color: blue;
 }
-
-
+.column-detail:hover {
+  color: blue;
+}
 
 .horisontal-menu-button > ul {
   list-style: none;
