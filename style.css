@@ -13,24 +13,46 @@ body {
     height: 105px;
     position: relative;
 }
-/*#home {
-    width: 46px;
-    height: 44px;
-    background: url(img_navsprites.gif) 0 0;
-}*/
+.search {
+  position: absolute;
+  top: 22px;
+  left: 340px;
+}
+
+.search-text {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; 
+}
+.search-text:hover {
+color: blue;
+}
+#search {
+  border-radius: 0 0 5px 0;  
+}
+#home-pic {
+    /*ackground: url(img_navsprites.gif) 0 0;*/
+    margin-left: 30px;
+}
 .horisontal-menu {
   position: absolute;
-  right: 500px;
+  right: 450px;
   top: 55px;
 }
+
   .horisontal-menu > ul {
     list-style: none;
     background-color: none;
 }
   .horisontal-menu > ul > li {
     display: inline;
-    padding: 25px;
-    /*float: left;*/
+    padding: 20px;
+  }
+  .vertical-sep-line {
+   position: absolute;
+   top: 5px; 
   }
   .logotype  {
     position: absolute;
@@ -48,9 +70,11 @@ body {
  color: blue;
  text-decoration: underline;
 }
+
 .dropdown-menu {
     position: relative;
   }
+
   .dropdown-menu:hover .dropdown-content {
     display: block;
   }
@@ -64,20 +88,20 @@ body {
     background-color: rgb(170,170,170);
     position: absolute;
     right: 10px;
-    top: 58px;
+    top: 50px;
     text-align: right;
     padding: 3px;
     width: 100%;
-    height: 100%;
   }
   .dropdown-content > a {
     text-decoration: none;
     color: white;
-    display: inline-block;
+    display: block;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold; 
     padding-bottom: 5px;
+
   }
 
 
@@ -86,7 +110,6 @@ body {
   .main-element {
     width: 900px;
     height: 100%;
-    border: 1px solid black;
     margin: auto;
   }
   
@@ -263,14 +286,20 @@ color: blue;
   color: rgb(36, 1, 82);
   text-decoration: underline;
 }
-.horisontal-menu-button > img {
-top: 15px;
+/*.horisontal-menu-button > img {
+top: 3px;
 right: 330px;
-} 
+} */
 footer {
   background-color: rgb(155, 155, 155);
   width: 100%;
   height: 40px;
   position: fixed;
   bottom: 0;
+  }
+  .horisontal-menu-button {
+    position: absolute;
+    top: -10px;
+    width: 100%;
+ 
   }
